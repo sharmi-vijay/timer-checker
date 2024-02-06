@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./taskstyle.css">
+    <title>javascript</title>
+</head>
+<body>
+    <h2 id="page-title"> TASK TIMER</h2>
+    <div class="clock">
+        <div class="outer-clock-face">
+                <div class="marking marking-one"></div>
+                <div class="marking marking-two"></div>
+                <div class="marking marking-three"></div>
+                <div class="marking marking-four"></div>
+            <div class="inner-clock-face">
+                <div class="hand hour-hand"></div>
+                <div class="hand min-hand"></div>
+                <div class="hand second-hand"></div>
+            </div>
+        </div>
+      </div>
+
+    <div class="time-des">
+        <form>
+            <input type="text" placeholder="Task" id="task"><br><br>
+            <input type="text" placeholder="Description" id="description"><br><br>
+            <button type="button" id="timer-cont">Start</button>
+        </form>
+        
+        <div class="hms" id="rightside">
+            <p id="hours">00</p>
+            <p style="color:aqua;">&nbsp; : &nbsp;</p>
+            <p id="minutes">00</p>
+            <p style="color:aqua">&nbsp; : &nbsp;</p>
+            <p id="seconds">00</p>
+        </div>    
+
+    <div class="table-split">
+    <table id="tab">
+        <tr>
+        <th>Task</th>      
+        <th>Description</th>
+        <th>Duration</th>
+        </tr>
+    </table> 
+   </div>
+   </div>
+  
+    <script type="module" src="taskjs.js"></script>
+    <script type= "module" src="clockjs.js"></script>
+</body>
+</html>
